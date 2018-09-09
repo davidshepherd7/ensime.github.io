@@ -32,6 +32,8 @@ Then in order to create the `.ensime` file for your project, start `sbt` (in the
 
 1. Use `~/.sbt/0.13/plugins/plugins.sbt` if you are using the older sbt 0.13
 
+3. sbt-ensime requires `src.zip` to be in the java home directory. If it isn't there you will get an error message about `JAVA_HOME` not being set correctly. You may need to install a devlopment or source jdk package to get `src.zip`.
+
 ### Unstable Server
 
 The latest stable release of the server is downloaded by default. If you wish to follow the *unstable* (continuously released) server, add the following to `~/.sbt/0.13/global.sbt`
